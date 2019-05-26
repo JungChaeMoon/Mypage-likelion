@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chaemoon's page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body{
+        background-color: #333333;
+    }
+</style>
+<body>
+{% block content %}
+<div style="margin-left: 700px; margin-top: 200px;">
+
+    <h1 style="font-family: 'Lobster', cursive; color: tan;">Hi! My name is chaemoon!!</h1>
+<br>
+<br>
+<br>
+<form method="get" action="{% url 'page:service' %}">
+    <button type="submit" class="btn btn-link"><h2><strong>나의 Service 보러가기!!</strong></h2></button>
+</form>
+<br>
+    <br>
+<form method="get" action="{% url 'page:introduce' %}">
+    <button type="submit" class="btn btn-link"><h2>나에대해 더알아보기!!</h2></button>
+</form>
+
+
+
+</div>
+{% endblock %}
+</body>
+</html>
